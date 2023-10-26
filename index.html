@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Order Form</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="name">Name</label>
+            <input type="text"  placeholder="name" id="name">
+        </div>
+
+        <p>Which coffee would you like to order?: </p>
+
+        <div>
+            <label for="coffee">Coffee Type:</label>
+            <input type="radio" id="turkish" name="coffee" value="turkish, 3">
+            <label for="turkish">Turkish Coffee $3</label>
+            <input type="radio" id="american" name="coffee" value="american, 5">
+            <label for="american">American Coffee $5</label>
+            <input type="radio" id="iced-latte" name="coffee" value= "iced-latte, 7">
+            <label for="iced-latte">Iced Latte $7</label>
+
+        </div>
+
+        <br>
+
+
+        <label for="">Extra<i>(Optional)</i></label>
+        <div>
+            <label><input type="checkbox" name="extra[]" value="extra-coffee, 1.5">Extra Coffee $1.5</input></label>
+            <label><input type="checkbox" name="extra[]" value="whipped-cream, 2">Whipped cream $2</input></label>
+            <label><input type="checkbox" name="extra[]" value="extra-caramel, 3">Extra caramel $3</input></label>
+        </div>
+
+        <input type="submit" value="Submit" id="btn">
+
+    </form>
+    <br>
+    <br>
+
+        <div>
+            <b>Name:</b> <p id="p1"></p><br>
+            <b>Coffee: </b><p id="p2"></p><br>
+            <b>Extra Coffee:</b> <p id="p3"></p><br>
+            <b>Total Price $:</b><p id="p4"></p>
+        </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
